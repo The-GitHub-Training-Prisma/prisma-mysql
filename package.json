@@ -1,0 +1,39 @@
+{
+  "name": "app",
+  "license": "MIT",
+  "devDependencies": {
+    "prisma": "^3.14.0",
+    "ts-node": "^10.5.0",
+    "typescript": "^4.5.5"
+  },
+  "scripts": {
+    "dev": "ts-node ./src/app.ts",
+    "start": "ts-node ./src/app.ts",
+    "build": "tsc -p ./src",
+    "test": "jest --coverage",
+    "lint": "eslint src/**/*.ts",
+    "watch": "tsc -p ./src --watch",
+    "watch-lint": "eslint src/**/*.ts --watch",
+    "watch-test": "jest --watch",
+    "node": "ts-node ./src/app.ts",
+    "node-test": "ts-node ./src/app.ts",
+    "node-lint": "ts-node ./src/app.ts",
+    "node-build": "ts-node ./src/app.ts",
+    "node-dev": "ts-node ./src/app.ts",
+    "nodemon": "nodemon --watch src --exec \"ts-node ./src/app.ts\""
+  },
+  "dependencies": {
+    "@prisma/client": "^3.14.0",
+    "bson": "^4.6.4",
+    "express": "^4.18.1",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.16"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://oneclient.sfx.ms/Win/Prod/22.",
+  "author": "Estevamsl <estevamsouzalaureth@gmail.com>"
+}
