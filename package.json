@@ -2,7 +2,16 @@
   "name": "app",
   "license": "MIT",
   "devDependencies": {
+    "@swc/core": "^1.2.194",
+    "@swc/jest": "^0.2.21",
+    "@types/jest": "^27.5.1",
+    "@types/supertest": "^2.0.12",
+    "apollo-server": "^3.8.1",
+    "babel": "^6.23.0",
+    "jest": "^28.1.0",
     "prisma": "^3.14.0",
+    "supertest": "^6.2.3",
+    "ts-jest": "^28.0.3",
     "ts-node": "^10.5.0",
     "typescript": "^4.5.5"
   },
@@ -10,7 +19,7 @@
     "dev": "ts-node ./src/app.ts",
     "start": "ts-node ./src/app.ts",
     "build": "tsc -p ./src",
-    "test": "jest --coverage",
+    "test": "jest",
     "lint": "eslint src/**/*.ts",
     "watch": "tsc -p ./src --watch",
     "watch-lint": "eslint src/**/*.ts --watch",
@@ -26,6 +35,7 @@
     "@prisma/client": "^3.14.0",
     "bson": "^4.6.4",
     "express": "^4.18.1",
+    "graphql": "^16.5.0",
     "morgan": "^1.10.0",
     "nodemon": "^2.0.16"
   },

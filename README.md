@@ -1,24 +1,48 @@
-# A Practical Introduction to Prisma
+# Tipos de testes
 
-This repository contains the starter project for the **Database Workflows & API Development with Prisma** workshop by [Nikolas Burk](https://twitter.com/nikolasburk).
+Unitários = Testam um componente/funcionalidade de forma **isolada**.
+Integração = Testa como um ou mais componentes/funcionalidades se comportam juntos(as).
+E2E = Simula o que o usaurio vai fazer na aplicação diariamente.
 
-## Setup
+# Banco de Dados
 
-### 1. Clone this repository
+Unitários = Testam um componente/funcionalidade de forma **isolada**.
+Integração = Talvez
+E2E = Sim (não só banco de dados, QUALQUER CONEXÃO EXTERNA INCLUSIVE APIs)
 
-You can clone this repository with the following command:
+# E-Commerce
 
-```
-git clone git@github.com:nikolasburk/prisma-workshop.git
-```
+- Realizar compras
 
-> Alternatively, you can also download the project via the GitHub UI. Click the green **Code**-button in the top-right corner and then click on **Download ZIP**.
+1. Criar um usuário
+2. Criar um produto
+3. Criar uma compra
+4. Criar uma forma de pagamento
+5. Criar uma forma de envio
+6. Criar uma forma de entrega
+7. Criar uma forma de pagamento
+8. Criar uma forma de envio
+9. Criar uma forma de entrega
+10. Criar uma forma de pagamento
+11. Criar uma forma de envio
+12. Criar uma forma de entrega
+13. Criar uma forma de pagamento
+14. Cadastra usuário no Banco
+15. Cadastra produto no Banco
+16. Cadastra compra no Banco
+17. Cadastra forma de pagamento no Banco
 
-### 2. Install dependencies
+[*] Changed the `Color` enum
+  [+] Added variant `TRANSPARENT`
+  [-] Removed variant `RED`
 
-Navigate into the project directory and install the npm dependencies with the following command:
+[*] Changed the `Cat` table
+  [-] Removed column `color`
+  [+] Added column `vaccinated`
 
-```
-cd prisma-workshop
-npm install
-```
+[*] Changed the `Dog` table
+  [-] Dropped the primary key on columns (id)
+  [-] Removed column `name`
+  [+] Added column `weight`
+  [*] Altered column `isGoodDog` (arity changed from Nullable to Required, default changed from `None` to `Some(Value(Boolean(true)))`)
+  [+] Added unique index on columns (weight)

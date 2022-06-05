@@ -1,3 +1,9 @@
+use cadastro;
+
+use mysql;
+
+show databases;
+
 -- CreateTable
 CREATE TABLE `Post` (
     `id` INTEGER NOT NULL AUTO_INCREMENT,
