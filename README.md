@@ -1,48 +1,56 @@
-# Tipos de testes
+<h1 align="center">
+  <center>Prisma: o ORM Node.js que você precisa em 2022
+</center>
+</h1>
 
-Unitários = Testam um componente/funcionalidade de forma **isolada**.
-Integração = Testa como um ou mais componentes/funcionalidades se comportam juntos(as).
-E2E = Simula o que o usaurio vai fazer na aplicação diariamente.
+<p align="center">Nessa live vimos o poder do <a href="https://www.prisma.io">PrismaIO</a> e os motivos para usarmos ele em nossas aplicações</p>
 
-# Banco de Dados
+## 👨🏼‍💻 Instrutor
 
-Unitários = Testam um componente/funcionalidade de forma **isolada**.
-Integração = Talvez
-E2E = Sim (não só banco de dados, QUALQUER CONEXÃO EXTERNA INCLUSIVE APIs)
+- [Dani Leão](https://www.instagram.com/dani_leao/)
 
-# E-Commerce
+## ✋🏻 Pré-requisitos
 
-- Realizar compras
+- [Node.js](https://nodejs.org/en/)
+- [Yarn](classic.yarnpkg.com/en/docs/install)
 
-1. Criar um usuário
-2. Criar um produto
-3. Criar uma compra
-4. Criar uma forma de pagamento
-5. Criar uma forma de envio
-6. Criar uma forma de entrega
-7. Criar uma forma de pagamento
-8. Criar uma forma de envio
-9. Criar uma forma de entrega
-10. Criar uma forma de pagamento
-11. Criar uma forma de envio
-12. Criar uma forma de entrega
-13. Criar uma forma de pagamento
-14. Cadastra usuário no Banco
-15. Cadastra produto no Banco
-16. Cadastra compra no Banco
-17. Cadastra forma de pagamento no Banco
+## 🔥 Instalação e execução
 
-[*] Changed the `Color` enum
-  [+] Added variant `TRANSPARENT`
-  [-] Removed variant `RED`
+1. Faça um clone desse repositório;
+2. Entre na pasta `cd prisma_decode`;
+3. Rode `yarn` ;
+4. Rode `yarn prisma generate` para instalar os models do prisma no projeto
+5. Rode `yarn dev` ou `npm run dev` para rodar a aplicação;
+6. Acesse a URL `http://localhost:4003`;
 
-[*] Changed the `Cat` table
-  [-] Removed column `color`
-  [+] Added column `vaccinated`
+## Como mostrar log da aplicação?
 
-[*] Changed the `Dog` table
-  [-] Dropped the primary key on columns (id)
-  [-] Removed column `name`
-  [+] Added column `weight`
-  [*] Altered column `isGoodDog` (arity changed from Nullable to Required, default changed from `None` to `Some(Value(Boolean(true)))`)
-  [+] Added unique index on columns (weight)
+```ts
+const prismaClient = new PrismaClient({
+  log: ["error", "info", "query", "warn"],
+});
+```
+
+## Como incluir informações em um select com relacionamento
+
+```ts
+const product = await prismaClient.product.findFirst({
+  where: {
+    id,
+  },
+  include: {
+    ProductCategory: {
+      // Seleciona o model
+      include: {
+        category: true, // Dentro do model seleciono o relacionamento que quero trazer completo.
+      },
+    },
+  },
+});
+```
+
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
+
+---
+
+Feito com 💖 by Rocketseat 👋 [Entre na nossa comunidade!](https://discordapp.com/invite/gCRAFhc)
