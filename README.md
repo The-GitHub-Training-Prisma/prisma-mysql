@@ -5,9 +5,9 @@
 
 <p align="center">Nessa live vimos o poder do <a href="https://www.prisma.io">PrismaIO</a> e os motivos para usarmos ele em nossas aplicações</p>
 
-## 👨🏼‍💻 Instrutor
+## 👨🏼‍💻 Developer
 
-- [Dani Leão](https://www.instagram.com/dani_leao/)
+- [Estevam Souza](https://www.linkedin.com/in/estevam-souza)
 
 ## ✋🏻 Pré-requisitos
 
@@ -17,11 +17,12 @@
 ## 🔥 Instalação e execução
 
 1. Faça um clone desse repositório;
-2. Entre na pasta `cd prisma_decode`;
-3. Rode `yarn` ;
-4. Rode `yarn prisma generate` para instalar os models do prisma no projeto
-5. Rode `yarn dev` ou `npm run dev` para rodar a aplicação;
-6. Acesse a URL `http://localhost:4003`;
+2. git clone https://github.com/Estevamsl/prisma-mysql
+3. Entre na pasta `cd prisma-mysql`;
+4. Rode `yarn`;
+5. Rode `yarn prisma generate` para instalar os models do prisma no projeto
+6. Rode `yarn dev` ou `npm run dev` para rodar a aplicação;
+7. Acesse a URL `http://localhost:4003`;
 
 ## Como mostrar log da aplicação?
 
@@ -52,5 +53,3 @@ const product = await prismaClient.product.findFirst({
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
 
 ---
-
-Feito com 💖 by Rocketseat 👋 [Entre na nossa comunidade!](https://discordapp.com/invite/gCRAFhc)
