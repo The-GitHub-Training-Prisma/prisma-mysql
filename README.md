@@ -1,11 +1,9 @@
 ![Prisma Studio Logo](image/prismaStudio.png)
 
 <h1 align="center">
-  <center>Prisma: o ORM Node.js que você precisa em 2022
+  <center>Prisma: o ORM Node.js
 </center>
 </h1>
-
-<p align="center">Nessa live vimos o poder do <a href="https://www.prisma.io">PrismaIO</a> e os motivos para usarmos ele em nossas aplicações</p>
 
 ## 👨🏼‍💻 Developer
 
