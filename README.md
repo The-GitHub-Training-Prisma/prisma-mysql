@@ -1,3 +1,5 @@
+![Prisma Studio Logo](image/prismaStudio.png)
+
 <h1 align="center">
   <center>Prisma: o ORM Node.js que você precisa em 2022
 </center>
@@ -19,7 +21,7 @@
 1. Faça um clone desse repositório;
 2. git clone https://github.com/Estevamsl/prisma-mysql
 3. Entre na pasta `cd prisma-mysql`;
-4. Rode `yarn`;
+4. Rode `yarn` ou rode o app com npm: npm init -y para criar um project padrão
 5. Rode `yarn prisma generate` para instalar os models do prisma no projeto
 6. Rode `yarn dev` ou `npm run dev` para rodar a aplicação;
 7. Acesse a URL `http://localhost:4003`;
