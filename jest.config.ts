@@ -24,6 +24,22 @@ export default {
 
   // The directory where Jest should output its coverage files
   coverageDirectory: "coverage",
+  
+  roots: ['<rootDir>/src'],
+  collectCoverageFrom: [
+    '<rootDir>/src/**/*.ts',
+    '!<rootDir>/src/main.ts',
+    '!<rootDir>/src/app.module.ts',
+  ],
+  testEnvironment: 'node',
+  transform: {
+    '.+\\.ts$': 'ts-jest',
+  },
+  testRegex: '.*\\.spec\\.ts$',
+  moduleFileExtensions: ['js', 'json', 'ts'],
+  moduleNameMapper: {
+    '@/(.*)': '<rootDir>/src/$1',
+  },
 
   // An array of regexp pattern strings used to skip coverage collection
   // coveragePathIgnorePatterns: [
